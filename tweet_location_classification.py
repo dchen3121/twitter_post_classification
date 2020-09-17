@@ -34,10 +34,10 @@ testing_counts = counter.transform(testing_data)
 
 classifier = MultinomialNB()
 classifier.fit(training_counts, training_labels)
-predictions = classifier.predict(testing_counts)
 
+# predictions = classifier.predict(testing_counts)
 # print(accuracy_score(testing_labels, predictions))
-# print(confusion_matrix(test_labels, predictions))
+# print(confusion_matrix(testing_labels, predictions))
 
 print("Enter the tweet which you'd like to know the location of:")
 test_tweet = input()
